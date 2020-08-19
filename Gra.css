@@ -9,17 +9,17 @@ body {
     padding: 0;
     padding-top: 10%
 }
+main {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+}
 #menu {
     font-size: 3em;
     color: whitesmoke;
     text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px darkred, 0 0 15px darkred, 0 0 20px darkred, 0 0 27.5px darkred, 0 0 37.5px darkred;    
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
 }
-/* #yd {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-image: linear-gradient(transparent, black, rgba(0,0,0,0.9), black, transparent);
-} */
 #win {
     color: gold;
     font-size: 5em;
