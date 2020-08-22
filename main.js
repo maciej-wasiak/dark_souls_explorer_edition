@@ -4,6 +4,9 @@ const victoryCounter = document.querySelector(".victory-counter");
 const result = document.querySelector(".result");
 let rng;
 
+const baseChance = 5;
+let chance = baseChance;
+
 if (localStorage.getItem('deathCounter') == null) {
   localStorage.setItem('deathCounter', 0)
 } else {
@@ -21,8 +24,11 @@ let victoryQuantity = parseFloat(localStorage.getItem('victoryCounter'));
 playButton.addEventListener("click", function (event) {
   document.querySelector('.result').style.background = 
     'linear-gradient(transparent,black, rgba(0, 0, 0, 0.9), black, transparent)';
+
   rng = Math.floor(Math.random() * 100 + 1);
-  if (rng < 5) {
+  chance = baseChance;
+
+  if (rng < chance) {
     result.innerHTML = "<p class='victory'>VICTORY ACHIEVED</p>";
     victoryQuantity += 1;
     localStorage.setItem('victoryCounter', victoryQuantity)

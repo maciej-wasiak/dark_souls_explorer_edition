@@ -5,7 +5,7 @@
 body {
   position: relative;
   font-family: "Cormorant SC";
-  background-image: url(dark-souls-bg-gif.gif);
+  background-image: url(./images/dark-souls-bg-gif.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -23,7 +23,7 @@ main {
 .header {
   background: -webkit-gradient(linear, left top, left bottom, from(#000a), to(transparent));
   background: linear-gradient(#000a, transparent);
-  font-size: 3em;
+  font-size: 5vh;
   color: whitesmoke;
   text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px darkred, 0 0 15px darkred, 0 0 20px darkred, 0 0 27.5px darkred, 0 0 37.5px darkred;
   -ms-grid-column: 1;
@@ -40,6 +40,7 @@ main {
 .result {
   -webkit-transition: 1s;
   transition: 1s;
+  height: 100%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
@@ -59,24 +60,25 @@ main {
 
 .victory {
   color: gold;
-  font-size: 5em;
+  font-size: 7vh;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 55px yellow, 0 0 75px yellow;
-  padding: 0;
+  padding: 0.5em;
   margin: 0;
   text-align: center;
 }
 
 .death {
   color: red;
-  font-size: 5em;
+  font-size: 9vh;
   text-shadow: 0 0 1px black, 0 0 3px red;
-  padding: 0;
+  padding: 0.5em;
   margin: 0;
+  text-align: center;
 }
 
 .counters {
   width: 100%;
-  font-size: 2em;
+  font-size: 4vh;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
@@ -93,26 +95,29 @@ main {
       justify-content: space-around;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000a));
   background: linear-gradient(transparent, #000a);
+  padding-bottom: 3vh;
 }
 
 .death-counter {
   color: red;
-  float: left;
   text-shadow: 0 0 2px black, 0 0 5px red;
+  text-align: center;
 }
 
 .victory-counter {
   margin-left: 10px;
-  float: right;
   color: gold;
   text-shadow: 0 0 2px white, 0 0 7px yellow;
+  text-align: center;
 }
 
 .play-button {
   color: white;
+  font-size: 2.5vh;
+  padding: 10px;
   border-radius: 10px;
   background-color: transparent;
-  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px green, 0 0 15px green, 0 0 20px green, 0 0 27.5px green, 0 0 37.5px green;
+  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px green, 0 0 15px green, 0 0 20px green, 0 0 27.5px green, 0 0 37.5px green;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 /3;

@@ -5,7 +5,7 @@
 body {
   position: relative;
   font-family: "Cormorant SC";
-  background-image: url(dark-souls-bg-gif.gif);
+  background-image: url(./images/dark-souls-bg-gif.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -19,7 +19,7 @@ main {
 }
 .header {
   background: linear-gradient(#000a, transparent);
-  font-size: 3em;
+  font-size: 5vh; //3em;
   color: whitesmoke;
   text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px darkred, 0 0 15px darkred,
     0 0 20px darkred, 0 0 27.5px darkred, 0 0 37.5px darkred;
@@ -31,14 +31,8 @@ main {
 }
 .result {
   transition: 1s;
-  // background-image: linear-gradient(
-  //   transparent,
-  //   black,
-  //   rgba(0, 0, 0, 0.9),
-  //   black,
-  //   transparent
-  // );
-
+  // background-image: linear-gradient(transparent, black, rgba(0, 0, 0, 0.9), black,  transparent);
+  height: 100%;
   grid-column: 1 / 4;
   grid-row: 2 / 3;
   display: flex;
@@ -47,54 +41,58 @@ main {
 }
 .victory {
   color: gold;
-  font-size: 5em;
+  font-size: 7vh; //4em;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow,
     0 0 40px yellow, 0 0 55px yellow, 0 0 75px yellow;
 
-  padding: 0;
+  padding: 0.5em;
   margin: 0;
   text-align: center;
 }
 .death {
   color: red;
-  font-size: 5em;
+  font-size: 9vh; //4em;
   text-shadow: 0 0 1px black, 0 0 3px red;
 
-  padding: 0;
+  padding: 0.5em;
   margin: 0;
+  text-align: center;
 }
 .counters {
   width: 100%;
-  font-size: 2em;
+  font-size: 4vh; //2em;
   grid-column: 1 / 4;
   grid-row: 4 / 5;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   background: linear-gradient(transparent, #000a);
-  // padding: 5%;
+  padding-bottom: 3vh;
 }
 .death-counter {
   color: red;
-  float: left;
+  // float: left;
   text-shadow: 0 0 2px black, 0 0 5px red;
+  text-align: center;
   // text-shadow: 0 0 2.5px black, 0 0 5px black, 0 0 10px darkred,
   //   0 0 15px darkred, 0 0 20px darkred, 0 0 27.5px darkred, 0 0 37.5px darkred;
 }
 .victory-counter {
   margin-left: 10px;
-  float: right;
+  // float: right;
   color: gold;
   text-shadow: 0 0 2px white, 0 0 7px yellow;
+  text-align: center;
   // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow,
   //   0 0 40px yellow, 0 0 55px yellow, 0 0 75px yellow;
 }
 .play-button {
   color: white;
+  font-size: 2.5vh;
+  padding: 10px;
   border-radius: 10px;
   background-color: transparent;
-  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px green, 0 0 15px green,
-    0 0 20px green, 0 0 27.5px green, 0 0 37.5px green;
+  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 10px green, 0 0 15px green, 0 0 20px green, 0 0 27.5px green, 0 0 37.5px green;
 
   grid-column: 2 /3;
   grid-row: 3 / 4;
